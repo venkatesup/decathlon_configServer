@@ -1,0 +1,30 @@
+http://localhost:9010/decathlongConfigServer/dev
+http://localhost:9010/decathlongConfigServer/staging
+http://localhost:9010/decathlongConfigServer/local
+http://localhost:9010/decathlongConfigServer/uat
+
+Example
+
+{
+  "name": "decathlongConfigServer",
+  "profiles": [
+    "dev"
+  ],
+  "label": null,
+  "version": "a7570dc69b95b181566c6efec57c009be0d103b1",
+  "state": null,
+  "propertySources": [
+    {
+      "name": "https://github.com/venkatesup/config_server_databaseProperties/application-dev.properties",
+      "source": {
+        "spring.datasource.url": "jdbc:mysql://localhost:3306/decathlon",
+        "spring.datasource.username": "root",
+        "spring.datasource.password": "root",
+        "spring.jpa.hibernate.ddl-auto": "update",
+        "spring.jpa.properties.hibernate.dialect": "org.hibernate.dialect.MySQL5Dialect",
+        "spring.jpa.show-sql": "true",
+        "spring.jpa.hibernate.naming-strategy": "org.hibernate.cfg.ImprovedNamingStrategy"
+      }
+    }
+  ]
+}
