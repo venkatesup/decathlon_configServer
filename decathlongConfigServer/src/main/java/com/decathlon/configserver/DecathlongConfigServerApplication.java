@@ -1,4 +1,4 @@
-package com.decathlon.microservices;
+package com.decathlon.configserver;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
